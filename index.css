@@ -25,14 +25,17 @@ body {
 .inpt{
   height: 30px;
   width: 200px;
-  padding: 5px;
-  margin: 5px;
+  padding: 3px;
+  margin: 10px;
   text-indent: 30px;
   font-size: 15px;
   border-radius: 50px;
   outline: none;
   border-style: none;
   cursor: pointer;
+}
+.inpt:hover{
+  border: 2px solid red;
 }
 .values{
   color: wheat;
@@ -43,6 +46,13 @@ body {
   justify-content: center;
   font-weight: bolder;
   color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rslt{
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  color: #e74c3c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .btns{
@@ -62,6 +72,9 @@ body {
   background-color: #546de5;
   color: black;
   font-size: 30px;
+}
+.btns:hover{
+  background-color: #feca57;
 }
 .btnsss{
   display: flex;
