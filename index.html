@@ -11,8 +11,8 @@
     <div class="main">
       <h1 class="calclator" title="My First Calculator">My First Calculator</h1>
       <br />
-      <p class="show">Your Result</p>
-      <h1 class="show" id="result">0</h1>
+      <p class="show">Your Result:</p>
+      <h1 class="rslt" id="result">0</h1>
       <center>
         <label for="1stvalue" class="values"> Enter 1st Value:</label>
         <input
@@ -21,6 +21,7 @@
           id="1stvalue"
           class="inpt"
           title="Enter 1st Value:"
+          required
         />
         <br />
         <label for="2ndvalue" class="values">Enter 2nd Value:</label>
@@ -30,17 +31,48 @@
           id="2ndvalue"
           class="inpt"
           title="Enter 2nd Value:"
-        /><br /><br>
+          required
+        /><br /><br />
       </center>
       <div class="btnsss">
-        <button id="plus" class="btns">+</button>
-        <button id="minus" class="btns">-</button>
-        <button id="multi" class="btns">*</button>
-        <button id="divide" class="btns">/</button>
+        <button id="plus" class="btns" title="Plus">+</button>
+        <button id="min" class="btns" title="Minus">-</button>
+        <button id="multi" class="btns" title="Multiply">*</button>
+        <button id="divide" class="btns" title="Divide">/</button>
       </div>
     </div>
   </body>
   <script>
-    
+    /////////// documents by id ///////////////////////////
+    let input1 = document.getElementById("1stvalue");
+    let input2 = document.getElementById("2ndvalue");
+    let plus = document.getElementById("plus");
+    let min = document.getElementById("min");
+    let multi = document.getElementById("multi");
+    let divide = document.getElementById("divide");
+    let result = document.getElementById("result");
+
+    /////////// functions on buttons ///////////////////////////
+
+    plus.addEventListener("click", function () {
+      let input3 = parseInt(input1.value);
+      let input4 = parseInt(input2.value);
+      result.innerText = input3 + input4;
+    });
+    min.addEventListener("click", function () {
+      input1.value;
+      input2.value;
+      result.innerText = input1.value - input2.value;
+    });
+    multi.addEventListener("click",function(){
+      input1.value;
+      input2.value;
+      result.innerText = input1.value * input2.value;
+    });
+    divide.addEventListener("click",function(){
+      input1.value;
+      input2.value;
+      result.innerText = input1.value / input2.value ;
+    })
   </script>
 </html>
