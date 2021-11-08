@@ -38,3 +38,32 @@ body {
   color: wheat;
   font-size: 20px;
 }
+.show{
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btns{
+  padding: 5px;
+  margin: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width:5%;
+  height: 50px;
+  margin-left:10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  background-color: #546de5;
+  color: black;
+  font-size: 30px;
+}
+.btnsss{
+  display: flex;
+  justify-content: center;
+}
